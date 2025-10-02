@@ -1,0 +1,280 @@
+:root {
+  --color-primary: #738fedd8;
+  --color-secondary: #0800f8;
+  --color-dark: #0a0a0aea;
+  --color-lite: #ffff;
+  --color-lite-dark: #ffffffc9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ece9e9;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+button {
+  all: unset;
+  background-color: var(--color-primary);
+  color: var(--color-lite);
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--color-lite);
+  color: var(--color-dark);
+}
+
+input {
+  all: unset;
+  background-color: transparent;
+  color: var(--color-lite);
+  font-size: 1.7rem;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--color-lite-dark);
+}
+input::placeholder {
+  color: var(--color-lite-dark);
+}
+input:focus {
+  border-bottom-color: var(--color-secondary);
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.app {
+  max-width: 130rem;
+  margin: 4rem auto;
+  padding: 0 4rem 4rem;
+  border-radius: 7px;
+  box-shadow: 5px 5px 50px 5px var(--color-primary);
+  color: var(--color-lite-dark);
+  background-color: var(--color-dark);
+}
+.title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 12px;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title h1 {
+  background-clip: text;
+  background-image: linear-gradient(
+    170deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  color: transparent;
+  transform: skewX(-15deg);
+}
+.title span {
+  font-size: 7rem;
+}
+
+/*Create customer styles*/
+.createCustomer {
+  /* border: 2px solid blue; */
+  margin-top: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+.createCustomer button {
+  padding: 0 18px;
+}
+
+/*Customer styles*/
+.wlcm {
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-lite-dark);
+  margin: 4rem;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bank {
+  padding: 3rem;
+}
+
+.operations {
+  margin: 8rem auto;
+  width: 50%;
+}
+.operations h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 3rem 0;
+}
+.form,
+.loanBtns {
+  margin-top: 6rem;
+}
+.form label {
+  font-size: 2rem;
+  letter-spacing: 4px;
+}
+
+.dps,
+.wdr,
+.lon {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+  padding: 1rem 0;
+}
+.dps *,
+.wdr *,
+.loanBtns * {
+  flex: 1;
+}
+.dps select {
+  all: unset;
+  background-color: var(--color-lite-dark);
+  color: var(--color-secondary);
+
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  align-self: center;
+}
+.loanBtns {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 10px;
+}
+
+.balanceDetails {
+  /* border: 2px solid blue; */
+  padding: 1rem;
+  width: 100%;
+}
+
+.balanceDetail__box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+  font-size: 1.3rem;
+}
+
+.balanceDetails h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.recordDetails {
+  background-color: var(--color-dark);
+  padding: 2rem;
+  width: 50%;
+  margin: 4rem auto;
+}
+.recordDetails h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 0 0 2.3rem 0;
+}
+
+.recordDetails li {
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.recordDetails button {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+/*
+=== Responsive codes styles ===
+*/
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .operations,
+  .recordDetails {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+  .app {
+    padding: 0 0.5rem 5rem;
+    border-radius: 0;
+    margin: 0;
+  }
+  .title {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .createCustomer {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .createCustomer button {
+    padding: 10px 15px;
+  }
+  .operations,
+  .recordDetails {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 72%;
+  }
+  .title {
+    padding: 0.3rem;
+  }
+
+  .createCustomer * {
+    width: 100%;
+  }
+
+  .dps,
+  .wdr,
+  .lon {
+    flex-direction: column;
+    gap: 10px 0;
+  }
+  .loanBtns {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2rem;
+  }
+
+  .dps select {
+    width: 90%;
+  }
+}
