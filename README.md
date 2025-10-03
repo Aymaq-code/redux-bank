@@ -32,4 +32,4 @@ This project was created for learning and practicing **state management with Red
 ![Screenshot 1](./src/assets/redux-p1.png)
 ![Screenshot 2](./src/assets/redux-p2.png)
 
-## 🌐 Live veiw ["https://aymaq-code.github.io/redux-bank/"]
+## 🌐 Live view ["https://aymaq-code.github.io/redux-bank/"]
