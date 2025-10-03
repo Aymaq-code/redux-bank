@@ -29,9 +29,7 @@ This project was created for learning and practicing **state management with Red
 
 ## 📸 Screenshot
 
-["./src/assets/redux-p1.png"]
-["./src/assets/redux-p2.png"]
+![Screenshot 1](./src/assets/redux-p1.png)
+![Screenshot 2](./src/assets/redux-p2.png)
 
-## 🌐
-
-Live veiw ["https://aymaq-code.github.io/redux-bank/"]
+## 🌐 Live veiw ["https://aymaq-code.github.io/redux-bank/"]
