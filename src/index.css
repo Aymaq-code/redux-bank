@@ -68,6 +68,7 @@ ul {
   box-shadow: 5px 5px 50px 5px var(--color-primary);
   color: var(--color-lite-dark);
   background-color: var(--color-dark);
+  overflow-x: hidden;
 }
 .title {
   text-align: center;
@@ -96,7 +97,6 @@ ul {
 
 /*Create customer styles*/
 .createCustomer {
-  /* border: 2px solid blue; */
   margin-top: 15rem;
   display: flex;
   justify-content: space-between;
@@ -111,7 +111,7 @@ ul {
   padding: 1.5rem 0;
   letter-spacing: 2px;
   font-weight: 700;
-  border-bottom: 2px solid var(--color-lite-dark);
+  border-bottom: 1.5px solid var(--color-lite-dark);
   margin: 4rem;
   text-transform: capitalize;
   display: flex;
@@ -171,7 +171,6 @@ ul {
 }
 
 .balanceDetails {
-  /* border: 2px solid blue; */
   padding: 1rem;
   width: 100%;
 }
@@ -254,14 +253,40 @@ ul {
   html {
     font-size: 72%;
   }
+  .app {
+    padding: 2rem 0.5rem;
+  }
   .title {
-    padding: 0.3rem;
+    padding: 0;
+  }
+  .title h1 {
+    font-size: 7.5rem;
+    overflow: hidden;
   }
 
   .createCustomer * {
     width: 100%;
   }
-
+  .wlcm {
+    width: 100%;
+    margin: 6rem 0;
+    padding: 0;
+    flex-direction: column;
+    gap: 15px 0;
+  }
+  .form {
+  }
+  .bank {
+    padding: 0;
+  }
+  .operations {
+    overflow: hidden;
+  }
+  .balanceDetail__box {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px 0;
+  }
   .dps,
   .wdr,
   .lon {
